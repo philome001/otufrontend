@@ -12,20 +12,36 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.philome.Otuworks"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.philome.Otuworks"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme":"Otu-works",
+ 
+    "scheme": "otu-works",
     "plugins": [
-      "expo-router"
-    ]
+      "expo-router",
+      "expo-image-picker",
+      "@react-native-google-signin/google-signin"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e52bbd09-8346-4dbe-b1d4-59c199eec09f"
+      }
+    }
   }
 }

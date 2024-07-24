@@ -1,16 +1,19 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Redirect } from 'expo-router'
+import {Redirect,Tabs } from 'expo-router'
+import { GestureHandlerRootView } from 'react-native-gesture-handler'
 
-const Page = () => {
+
+const index = () => {
   return (
-    <View>
-      <Redirect href="/components"/>
-    </View>
+ 
+    <Redirect href={'loginscreen'}/>
+
+   
   )
 }
 
-export default Page
+export default index
 
 const styles = StyleSheet.create({})
 
